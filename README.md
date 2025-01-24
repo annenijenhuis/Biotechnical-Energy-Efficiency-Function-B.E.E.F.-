@@ -1,5 +1,5 @@
-##Biotechnical Energy Efficiency Function (B.E.E.F.)
-###The energy-efficiency fungal plastic degradation model
+## Biotechnical Energy Efficiency Function (B.E.E.F.)
+### The energy-efficiency fungal plastic degradation model
 Welcome to our model for calculating optimal conditions for efficient plastic degradation through fungi. Troughout this model, the word incubation time will be used frequently. This refers to the time (in days) it takes to fully degrade a batch of plastic. This model has been created as part of a research for the course Project 4 at the University of Amsterdam. All the scientifical justification for this model can be found there.
 
 ### The model consists of different functions that roughly perform the following tasks:
