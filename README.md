@@ -1,9 +1,10 @@
+# README
 ## Biotechnical Energy Efficiency Function (B.E.E.F.)
 ### The energy-efficiency fungal plastic degradation model
-Welcome to our model for calculating optimal conditions for efficient plastic degradation through fungi. Troughout this model, the word incubation time will be used frequently. This refers to the time (in days) it takes to fully degrade a batch of plastic. This model has been created as part of a research for the course Project 4 at the University of Amsterdam. All the scientifical justification for this model can be found there.
+Welcome to our model for calculating optimal conditions for efficient plastic degradation trough fungi. Troughout this model, the word incubation time will be used frequently. This refers to the time (in days) it takes to fully degrade a batch of plastic. This model has been created as part of a research for the course Project 4 at the University of Amsterdam. All the scientifical justification for this model can be found there.
 
 ### The model consists of different functions that roughly perform the following tasks:
- - **Data Processing:** Converts user-provided CSV files into Python lists.
+ - **User input and data preperation:** Converts user-provided CSV files into Python lists.
  - **Fitting:** Fits the data to Gaussian, inverse and linear models and returns their formulas for further calculations.
  - **Equalization:** Adjusts functions for temperature and particle size for accurate model output.
  - **Incubation Time calculations** Calculates the total incubation time for different combinations of temperature and particle size and saves these in a dataframe.
@@ -20,7 +21,7 @@ Besides this there are also other constants and data that are required for runni
   - the size of your bioreactor (m³)
   - the plastic concentration in your bioreactor (mg/mL)
   - the temperature your bioreactor reaches while running after stabilizing its temperature and the wattage this requires. Give this as: 'wattage, temperature reached'
-  - the energy cost for potentially running the UV radiation machine (W)
+  - the energy cost for potentially running the UV radiation machine (J)
   - potential time dependent extra energy costs that do not fit in another category (W)
   - potential time independent extra energy costs that do not fit in another category (J)
 
