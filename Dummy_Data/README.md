@@ -15,5 +15,6 @@ the B.E.E.F. model and help us improve it.
 - dummy_part_size_ct.csv: This is a csv file with different particle sizes (mm³) in the first column and their associated
   incubation time (days) in the second column. This file can be used for input directly and does not have to be edited anymore.
 - dummy_part_size_energy.csv: This is a csv file with different particle sizes (mm³) in the first column and their associated
-  energy cost (J/mg) in the second column.
-- dummy_other_values.txt:  
+  energy cost (J/mg) in the second column. This file can be used for input directly and does not have to be edited anymore.
+- dummy_other_values.txt:  This is a text file that includes the other inputs of the dummy data that are needed to run the model.
+The user must copy the values from the files themselves and input it into the model.
