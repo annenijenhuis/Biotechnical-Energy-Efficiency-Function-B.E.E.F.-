@@ -16,5 +16,9 @@ the B.E.E.F. model and help us improve it.
   incubation time (days) in the second column. This file can be used for input directly and does not have to be edited anymore.
 - dummy_part_size_energy.csv: This is a csv file with different particle sizes (mm³) in the first column and their associated
   energy cost (J/mg) in the second column. This file can be used for input directly and does not have to be edited anymore.
+  This data comes from research by Buckshumiyan et al. (2023).
 - dummy_other_values.txt:  This is a text file that includes the other inputs of the dummy data that are needed to run the model.
 The user must copy the values from the files themselves and input it into the model.
+
+### References
+Buckshumiyan, A., Babu, S., Prakash, M., & Arasu, G. (2023). Recycling of plastic wastage by die shredder machine. Materials Today Proceedings. https://doi.org/10.1016/j.matpr.2023.04.022 

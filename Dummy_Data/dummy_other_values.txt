@@ -1,67 +1,62 @@
-This is a text file that includes the other inputs of the dummy data that are needed to run the model.
+This is a text file that includes the inputs of the dummy data that are needed to run the model.
 The user must copy the values from the files themselves and input it into the model.
 
+Input question:
 A CSV file with a matrix of the temperature (°C), plotted against the incubation time of the full degradation (days): 
+Answer: This file is provided in the Dummy_Data folder.
+
+Input question:
 Particle size of the polyethylene (mm³) in the water while performing the tests for temperature: 
+Answer: 25
+
+Input question:
 A CSV file with a matrix of the particle size (mm³), plotted against the incubation time of the full degradation (days) :
+Answer: This file is provided in the Dummy_Data folder.
+
+Input question:
 Water temperature (°C) while performing the tests for particle size:
+Answer: 58
+
+Input question:
 Ambient temperature (°C) while performing all the tests (leave empty for default room temperature (21°C)):
-    if not ambient_temperature:
-        ambient_temperature = 21
-        print("No input provided. Using default ambient temperature (room temperature (21°C)).")
-    else:
-        ambient_temperature = float(ambient_temperature)
+Answer: Leave empty for default
 
+Input question:
 Enter a CSV file with a matrix of the particle sizes (mm³) against the energy cost for mechanical abrasion to reach that size (J/mg):
-    if energy_part_size_file:
-        try:
-            particle_size_MA, energy_cost_MA = read_csv_to_lists(energy_part_size_file)
-        except FileNotFoundError:
-            print("File not found.")
-    else:
-        print("No input provided.")
+Answer: This file is provided in the Dummy_Data folder.
 
+Input question:
 Concentration of polyethylene in the water (mg per ml) while performing all the tests:
+Answer: 0.5 (Vaksmaa, 2024)
+
+Input question:
 Volume of the bioreactor you want to use (m³):
+Answer: 100 (Jeroen Hugenholtz, pers. comm., January 10, 2025)
 
+Input question:
 What is the wattage your bioreactor needs to stay on a certain temperature? (give this seperated by a comma: 'wattage, temperature'):
-    values = heat_energy_requirement.split(',')
-    heat_energy_requirement = tuple(float(value.strip()) for value in values)
+Answer: 7820, 30
 
+Input question:
 What is the efficiency of your heat pump? Example: Efficiency is 4 if you need 4 watts of power for every watt of heat.:
+Answer: 4
 
+Input question:
 Energy cost of oxidation/flowing, leave empty for default (J):
-    if not oxidation_energy_cost:
-      energy_MwH_year = 0.0998 * bioreactor - 149.96
-      energy_MwH = energy_MwH_year * (incubation_time / 365)
-      energy_J = energy_MwH * (3.6 * 10**9)
-      if energy_J <= 0:
-        energy_J = 0
+Answer: Leave empty for default
 
-    else:
-        oxidation_energy_cost = float(oxidation_energy_cost)
-
+Input question:
 Energy cost of UV radiation if UV is used, leave empty otherwise (J):
-    if not uv_energy_cost:
-        uv_energy_cost = 0
+Answer: 0
 
-    else:
-        uv_energy_cost = float(uv_energy_cost)
-
+Input question:
 Time dependent potential extra energy costs that do not fall into another category (W):
-    if not time_dep_extra_energy_costs:
-        time_dep_extra_energy_costs = 0
-    else:
-        time_dep_extra_energy_costs = float(time_dep_extra_energy_costs)
+Answer: 0
 
+Input question:
 Time independent potential extra energy costs that do not fall into another category (J):
-    if not time_indep_extra_energy_costs:
-        time_indep_extra_energy_costs = 0
-    else:
-        time_indep_extra_energy_costs = float(time_indep_extra_energy_costs)
+Answer: 0
 
-Are you running this code in google colab? (y/n): 
-    if bokeh.lower() == "y":
-        bokeh = True
-    else:
-        bokeh = False
+References:
+- Vaksmaa, A., Vielfaure, H., Polerecky, L., Kienhuis, M., Van Der Meer, M., Pflüger, T., Egger, M., & Niemann, H. (2024). Biodegradation 
+    of polyethylene by the marine fungus Parengyodontium album. The Science Of The Total Environment, 172819. https://doi.org/10.1016/j.scitotenv.2024.172819
